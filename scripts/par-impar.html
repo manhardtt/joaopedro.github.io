@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Par ou Ímpar</title>
+</head>
+<body>
+
+  <h1>Par ou Ímpar</h1>
+
+  <button onclick="verificar()">Clique para jogar</button>
+
+  <script>
+    function verificar() {
+      const n = parseInt(prompt("Digite um número:"));
+
+      if (isNaN(n)) {
+        alert("Digite um número válido!");
+        return;
+      }
+
+      if (n % 2 === 0) alert("PAR");
+      else alert("ÍMPAR");
+    }
+  </script>
+
+  <a href="../index.html">Voltar</a>
+
+</body>
+</html>

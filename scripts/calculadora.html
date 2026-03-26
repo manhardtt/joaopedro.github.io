@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Simples</title>
+</head>
+<body>
+
+  <h1>Calculadora Simples</h1>
+
+  <button onclick="calcular()">Clique para calcular</button>
+
+  <script>
+    function calcular() {
+      const n1 = parseFloat(prompt("Digite o primeiro número:"));
+      const n2 = parseFloat(prompt("Digite o segundo número:"));
+      const op = prompt("Digite a operação (+, -, *, /):");
+
+      let res;
+      if (op === "+") res = n1 + n2;
+      else if (op === "-") res = n1 - n2;
+      else if (op === "*") res = n1 * n2;
+      else if (op === "/") res = n1 / n2;
+      else { alert("Operação inválida!"); return; }
+
+      alert("Resultado: " + res);
+    }
+  </script>
+
+  <a href="../index.html">Voltar</a>
+
+</body>
+</html>
